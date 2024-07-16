@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+</head>
+<style>
+    body {
+        background-color: #c9c4c4;
+    }
+    h1 {
+        text-align: center;
+        color: #8d3d3d;
+        font-family: sans-serif;
+    }
+    button {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    div {
+        margin-top: 10px;
+    }
+    .inline {
+        display: inline;
+    }
+</style>
+<body>
+<h1 id="feur">Salut !</h1>
+<h2>Bienvenue sur cet article hébergé par WebServ</h2>
+<h2>Vous avez déjà visité le site.</h2>
+
+<h4>Vous êtes connecté en tant que : </h4>
+<h4 class="inline" id="connectedValue"></h4>
+
+<ul>
+    <li>Test </li>
+    <div>
+        <label for="myInput">Nouveau titre : </label>
+        <input type="text" id="myInput" name="myInput">
+    </div>
+    <div>
+        <label for="strlenInput">strlen : </label>
+        <input type="text" id="strlenInput" name="strlenInput">
+        <p class="inline" id="strlenValue"></p>
+    </div>
+    <div>
+        <label for="strcmpInput">strcmp : </label>
+        <input type="text" id="strcmpInput" name="strcmpInput">
+        <input type="text" id="strcmpInput2" name="strcmpInput2">
+        <p class="inline" id="strcmpValue"></p>
+    </div>
+    <div>
+        <label for="newnameInput">nouveau nom : </label>
+        <input type="text" id="newnameInput" name="newnameInput">
+        <p class="inline" id="newnameValue"></p>
+    </div>
+    <br>
+    <button onClick="doComputation()">Mettre à jour le titre</button>
+</ul>
+
+<img src="panda.webp">
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="file">Choose file to upload</label>
+        <input type="file" id="file" name="file" multiple />
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
+</form>
+
+
+
+</body>
+
+</html>

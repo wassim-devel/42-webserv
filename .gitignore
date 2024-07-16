@@ -1,0 +1,5 @@
+*.o
+*.d
+webserv
+srcs/main2.cpp
+.idea/
